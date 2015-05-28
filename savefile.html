@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$content = "some text here";
+$fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/webdictionary.txt","w");
+fwrite($fp,$content);
+fclose($fp);
+?>
+
+</body>
+</html>
